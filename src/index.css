@@ -1,0 +1,75 @@
+@font-face{
+    font-family: RobotoCondensed;
+    src: url(assets/roboto-condensed.light.ttf);
+    font-weight:800;
+}
+
+@font-face{
+    font-family: EconomicaBold;
+    src: url(assets/economica-bold.ttf);
+}
+html{
+    font-size:62.5%;
+}
+body{
+    text-align:center;
+    /*box-sizing:border-box;*/
+    padding:0;
+    font-size:2rem;
+    background: linear-gradient(to bottom,#2193b0 0%,#6dd5ed 100%);
+    margin:2.5%;
+    font-family: 'RobotoCondensed';
+}
+
+h1,h2,h3,h4,h5{
+    font-family:'EconomicaBold';
+    color:black;
+}
+
+.profile{
+    width:20rem;
+    height:20rem;
+    border-radius:10rem;
+}
+
+.title-fade-out{
+    opacity:0;
+    animation-name: fade-out;
+    animation-duration: 2s;
+}
+.title-fade-in{
+    opacity:100;
+    animation-name: fade-in;
+    animation-duration: 2s;
+}
+
+@keyframes fade-out{
+    from{
+        opacity: 100;
+    }
+    to{
+        opacity:0;
+    }
+}
+
+@keyframes fade-in{
+    from{
+        opacity: 0;
+    }
+    to{
+        opacity:100;
+    }
+}
+
+.read-less{
+    color: orange;
+    text-align: center;
+}
+.read-more{
+    color: orange;
+    text-align: center;
+}
+
+a{
+    color:brown;
+}
