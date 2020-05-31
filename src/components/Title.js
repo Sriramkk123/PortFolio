@@ -12,13 +12,13 @@ class Title extends Component{
 
     componentDidMount(){
         this.timeout = setTimeout(()=> this.setState({fadeIn:false}),2000);
-        console.log('Title mounted');
+        //console.log('Title mounted');
 
         this.animateTitles();
     }
 
     componentWillUnmount(){
-        console.log('Title unmounted');
+        //console.log('Title unmounted');
         clearInterval(this.titleInterval);
         clearTimeout(this.timeout);
     }
@@ -31,7 +31,7 @@ class Title extends Component{
            this.timeout = setTimeout(()=> this.setState({fadeIn:false}),1000);
         }, 2000);
         }, 4000);
-         console.log("this.interval",this.titleInterval);
+         //console.log("this.interval",this.titleInterval);
     }
 
    
